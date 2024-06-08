@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="450.0" stylesheets="@../Resources/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="booking.service.BorrowController">
+   <center>
+      <VBox prefHeight="610.0" prefWidth="450.0" style="-fx-background-color: #DAD7CD;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="450.0" spacing="30.0" style="-fx-background-color: #a3b18a;">
+               <children>
+                  <Text fill="#3a5a40" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Book">
+                     <font>
+                        <Font name="Montserrat Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="254.0" prefWidth="450.0">
+               <children>
+                  <ImageView fitHeight="275.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bonesofcontention.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text fx:id="bonestext" fill="#3a5a40" strokeType="OUTSIDE" strokeWidth="0.0" text="BONES OF CONTENTION" wrappingWidth="211.677368581295">
+                           <font>
+                              <Font name="Montserrat Bold" size="29.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#3a5a40" strokeType="OUTSIDE" strokeWidth="0.0" text="The Andres Bonifacio Lectures" wrappingWidth="217.27740520238876">
+                           <font>
+                              <Font name="Montserrat Bold" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Separator prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="AMBETH R. OCAMPO" wrappingWidth="214.66795349121094">
+                           <font>
+                              <Font name="Montserrat Bold" size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#3a5a40" strokeType="OUTSIDE" strokeWidth="0.0" text="Category:" wrappingWidth="177.49191284179688">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Montserrat Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NonFiction, History" wrappingWidth="213.49203491210938">
+                           <font>
+                              <Font name="Montserrat Regular" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#4b4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="First published January 1, 2001" wrappingWidth="104.69185638427734">
+                           <font>
+                              <Font name="Montserrat Regular" size="10.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <Pane prefHeight="299.0" prefWidth="458.0">
+               <children>
+                  <Text fill="#344e41" layoutX="21.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Extraordinarily popular and influential, widely read and appreciated, Ocampo has done more than any single author in recent years to inspire interest in and enthusiasm for Philippine history among a broad Filipino audience...&#10;&#10;Ocampo frequently calls attention to the political uses to which Philippine History has been subjected, even as he chips away at the fossilizing effects of an official nationalism that has domesticated the memory of its National Heroes.&quot;&#10;Eva Lotta-Hedman and John T. Sidel&#10;in Philippine Politics and Society in the Twentieth Century: Colonial Legacies, Post Colonial Trajectories" textAlignment="JUSTIFY" wrappingWidth="414.13675689697266">
+                     <font>
+                        <Font name="Montserrat Regular" size="11.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="borrowbtn1" layoutX="167.0" layoutY="185.0" mnemonicParsing="false" onAction="#borrow1" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: #3a5a40; -fx-background-radius: 12px;" styleClass="btn1" text="Borrow" textFill="#dad7cd">
+                     <font>
+                        <Font name="Montserrat Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="backbtn" layoutX="179.0" layoutY="227.0" mnemonicParsing="false" onMouseClicked="#close" prefHeight="29.0" prefWidth="93.0" style="-fx-background-color: #3a5a40; -fx-background-radius: 12px;" styleClass="btn1" text="Back" textFill="#dad7cd">
+                     <font>
+                        <Font name="Montserrat Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="549.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#3a5a40" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Bones Of Contention" textAlignment="CENTER" wrappingWidth="145.783052444458">
+               <font>
+                  <Font name="Montserrat Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

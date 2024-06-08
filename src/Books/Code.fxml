@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="450.0" stylesheets="@../Resources/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="booking.service.BorrowController">
+   <center>
+      <VBox prefHeight="610.0" prefWidth="450.0" style="-fx-background-color: #DAD7CD;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="450.0" spacing="30.0" style="-fx-background-color: #a3b18a;">
+               <children>
+                  <Text fill="#3a5a40" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Book">
+                     <font>
+                        <Font name="Montserrat Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="254.0" prefWidth="450.0">
+               <children>
+                  <ImageView fitHeight="247.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@code.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text fx:id="codetext" fill="#3a5a40" strokeType="OUTSIDE" strokeWidth="0.0" text="CODE" wrappingWidth="226.07733196020126">
+                           <font>
+                              <Font name="Montserrat Bold" size="55.0" />
+                           </font>
+                        </Text>
+                        <Separator prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Charles Petzold" wrappingWidth="214.66795349121094">
+                           <font>
+                              <Font name="Montserrat Bold" size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#3a5a40" strokeType="OUTSIDE" strokeWidth="0.0" text="Category:" wrappingWidth="177.49191284179688">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Montserrat Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Programming, Coding" wrappingWidth="213.49203491210938">
+                           <font>
+                              <Font name="Montserrat Regular" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#4b4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="First published August 7, 2022" wrappingWidth="96.69185638427734">
+                           <font>
+                              <Font name="Montserrat Regular" size="10.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <Pane prefHeight="299.0" prefWidth="458.0">
+               <children>
+                  <Text fill="#344e41" layoutX="18.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What do flashlights, the British invasion, black cats, and seesaws have to do with computers? In CODE, they show us the ingenious ways we manipulate language and invent new means of communicating with each other. And through CODE, we see how this ingenuity and our very human compulsion to communicate have driven the technological innovations of the past two centuries.&#10;Using everyday objects and familiar language systems such as Braille and Morse code, author Charles Petzold weaves an illuminating narrative for anyone who’s ever wondered about the secret inner life of computers and other smart machines. It’s a cleverly illustrated and eminently comprehensible story—and along the way, you’ll discover you’ve gained a real context for understanding today’s world of PCs, digital media, and the Internet. No matter what your level of technical savvy, CODE will charm you—and perhaps even awaken the technophile within." textAlignment="JUSTIFY" wrappingWidth="414.13675689697266">
+                     <font>
+                        <Font name="Montserrat Regular" size="11.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="borrowbtn10" layoutX="167.0" layoutY="208.0" mnemonicParsing="false" onAction="#borrow10" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: #3a5a40; -fx-background-radius: 12px;" styleClass="btn1" text="Borrow" textFill="#dad7cd">
+                     <font>
+                        <Font name="Montserrat Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="backbtn" layoutX="179.0" layoutY="251.0" mnemonicParsing="false" onMouseClicked="#close" prefHeight="29.0" prefWidth="93.0" style="-fx-background-color: #3a5a40; -fx-background-radius: 12px;" styleClass="btn1" text="Back" textFill="#dad7cd">
+                     <font>
+                        <Font name="Montserrat Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="549.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#3a5a40" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Code" textAlignment="CENTER" wrappingWidth="47.38308143615723">
+               <font>
+                  <Font name="Montserrat Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="470.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="booking.model.Transact">
+   <fx:include source="MyAcc.fxml" />
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #A3B18A;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="84.0" prefWidth="474.0" spacing="50.0" style="-fx-background-color: #3A5A40;">
+               <children>
+                  <ImageView fitHeight="84.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Logo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.28" orientation="VERTICAL" prefHeight="43.0" prefWidth="0.0" style="-fx-background-color: #3A5A40;">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Separator>
+                  <HBox alignment="CENTER_RIGHT" maxWidth="-Infinity" prefHeight="84.0" prefWidth="227.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="84.0" prefWidth="190.0">
+                           <HBox.margin>
+                              <Insets right="100.0" />
+                           </HBox.margin>
+                           <children>
+                              <Text fill="#a3ba8a" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrowed Books" wrappingWidth="197.82499623298645">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="25.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="86.0" prefWidth="168.0" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="450.0" spacing="30.0" style="-fx-background-color: #588157;">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="50.0" prefWidth="450.0">
+                     <children>
+                        <Text fill="#3a5a40" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Receipt">
+                           <font>
+                              <Font name="Montserrat Bold" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <Pane prefHeight="566.0" prefWidth="450.0">
+               <children>
+                  <VBox layoutX="32.0" layoutY="77.0" prefHeight="253.0" prefWidth="387.0" spacing="20.0">
+                     <children>
+                        <Pane fx:id="title_bg" prefHeight="37.0" prefWidth="423.0" style="-fx-background-radius: 12px; -fx-background-color: #dad7cd;">
+                           <children>
+                              <Text fill="#3a5a40" fontSmoothingType="LCD" layoutX="25.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="25.0" />
+                                 </font>
+                              </Text>
+                              <Label fx:id="b6" layoutX="50.0" layoutY="4.0" prefHeight="26.0" prefWidth="328.0" text="Book1">
+                                 <font>
+                                    <Font name="Montserrat Bold Italic" size="12.0" />
+                                 </font></Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="title_bg1" prefHeight="37.0" prefWidth="423.0" style="-fx-background-radius: 12px; -fx-background-color: #dad7cd;">
+                           <children>
+                              <Text fill="#3a5a40" fontSmoothingType="LCD" layoutX="23.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="25.0" />
+                                 </font>
+                              </Text>
+                              <Label fx:id="b7" layoutX="51.0" layoutY="5.0" prefHeight="26.0" prefWidth="328.0" text="Book2">
+                                 <font>
+                                    <Font name="Montserrat Bold Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="title_bg11" prefHeight="37.0" prefWidth="423.0" style="-fx-background-radius: 12px; -fx-background-color: #dad7cd;">
+                           <children>
+                              <Text fill="#3a5a40" fontSmoothingType="LCD" layoutX="23.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="25.0" />
+                                 </font>
+                              </Text>
+                              <Label fx:id="b8" layoutX="51.0" layoutY="5.0" prefHeight="26.0" prefWidth="328.0" text="Book3">
+                              <font>
+                                 <Font name="Montserrat Bold Italic" size="12.0" />
+                              </font>
+                           </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="title_bg12" prefHeight="37.0" prefWidth="423.0" style="-fx-background-radius: 12px; -fx-background-color: #dad7cd;">
+                           <children>
+                              <Text fill="#3a5a40" fontSmoothingType="LCD" layoutX="21.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="25.0" />
+                                 </font>
+                              </Text>
+                              <Label fx:id="b9" layoutX="51.0" layoutY="5.0" prefHeight="26.0" prefWidth="328.0" text="Book4">
+                              <font>
+                                 <Font name="Montserrat Bold Italic" size="12.0" />
+                              </font></Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="title_bg13" prefHeight="37.0" prefWidth="423.0" style="-fx-background-radius: 12px; -fx-background-color: #dad7cd;">
+                           <children>
+                              <Text fill="#3a5a40" fontSmoothingType="LCD" layoutX="20.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="25.0" />
+                                 </font>
+                              </Text>
+                              <Label fx:id="b10" layoutX="51.0" layoutY="5.0" prefHeight="26.0" prefWidth="328.0" text="Book5">
+                                 <font>
+                                    <Font name="Montserrat Bold Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <Text fill="#3a5a40" fontSmoothingType="LCD" layoutX="32.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books">
+                     <font>
+                        <Font name="Montserrat Bold" size="39.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="38.0" layoutY="59.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="6.0" prefWidth="106.0">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Separator>
+                  <Text fill="#3a5a40" layoutX="32.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrowed for : " wrappingWidth="150.07212829589844">
+                     <font>
+                        <Font name="Montserrat Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="signoutbtn" layoutX="156.0" layoutY="431.0" mnemonicParsing="false" onMouseClicked="#signout" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: #3A5A40;" text="SIGN OUT" textFill="#dad7cd">
+                     <font>
+                        <Font name="Montserrat Bold" size="15.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn1" />
+                        <String fx:value="btn_workbench" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="homebtn" layoutX="155.0" layoutY="479.0" mnemonicParsing="false" onMouseClicked="#openBookingSystem2" prefHeight="34.0" prefWidth="141.0" style="-fx-background-color: #3A5A40;" text="RETURN HOME" textFill="#dad7cd">
+                     <font>
+                        <Font name="Montserrat Bold" size="15.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn1" />
+                        <String fx:value="btn_workbench" />
+                     </styleClass>
+                  </Button>
+                  <Label fx:id="labeltoupdate" layoutX="174.0" layoutY="341.0" prefHeight="26.0" prefWidth="168.0">
+                     <font>
+                        <Font name="Montserrat Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#3a5a40" layoutX="32.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To be returned on:" wrappingWidth="189.27207946777344">
+                     <font>
+                        <Font name="Montserrat Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="dateofreturn" layoutX="212.0" layoutY="373.0" prefHeight="26.0" prefWidth="218.0">
+                     <font>
+                        <Font name="Montserrat Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#3a5a40" layoutX="226.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date and Time of Transaction:" wrappingWidth="242.0721893310547">
+                     <font>
+                        <Font name="Montserrat Bold Italic" size="14.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="date" alignment="CENTER" contentDisplay="CENTER" layoutX="229.0" layoutY="25.0" prefHeight="26.0" prefWidth="216.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Montserrat Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox fx:id="titlebar" onMouseDragged="#drag" onMousePressed="#pressed" prefHeight="22.0" prefWidth="630.0" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="413.0">
+               <children>
+                  <Text fill="#3a5a40" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="RECEIPT" textAlignment="CENTER" wrappingWidth="60.98305702209473">
+                     <font>
+                        <Font name="Montserrat Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <Label fx:id="minimize" alignment="TOP_CENTER" onMouseClicked="#minimize" prefHeight="22.0" prefWidth="24.0" text="_" textFill="#3a5a40">
+               <font>
+                  <Font name="Montserrat Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="close" alignment="CENTER" contentDisplay="RIGHT" onMouseClicked="#close" prefHeight="22.0" prefWidth="24.0" text="X" textFill="#3a5a40">
+               <font>
+                  <Font name="Montserrat Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

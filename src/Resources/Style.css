@@ -1,0 +1,36 @@
+.btn_workbench{
+    -fx-background-color:#a3b18a;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+.bg_book{
+    -fx-background-radius: 15px;
+}
+.bg_book2{
+    -fx-background-radius: 15px;
+}
+.bg_book3{
+    -fx-background-radius: 15px;
+}
+.reco_bg{
+    -fx-background-radius: 15px;
+}
+.btn:hover{
+     -fx-border-color:#344e41;
+     -fx-border-radius:10;
+     -fx-border-width:2.5;
+}
+.btn1:hover{
+
+     -fx-border-color:#dad7cd;
+     -fx-border-radius:10;
+     -fx-border-width:2.5;
+}
+#titlebar{
+    -fx-background-color:#dad7cd;
+}
+.border-pane {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-padding: 10;
+}

@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="935.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="booking.service.BorrowController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #A3B18A;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="101.0" prefWidth="845.0" spacing="50.0" style="-fx-background-color: #3A5A40;">
+               <children>
+                  <ImageView fitHeight="76.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Logo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.28" orientation="VERTICAL" prefHeight="43.0" prefWidth="0.0" style="-fx-background-color: #3A5A40;">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Separator>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="90.0" prefWidth="673.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="86.0" prefWidth="168.0">
+                           <children>
+                              <Button fx:id="accountbtn" mnemonicParsing="false" onMouseClicked="#myAcc" prefHeight="34.0" prefWidth="206.0" style="-fx-background-color: #344E41;" stylesheets="@Style.css" text="MY ACCOUNT" textFill="#a3b18a">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="24.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@icon(8).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="btn_workbench" />
+                                    <String fx:value="btn1" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="935.0" spacing="30.0" style="-fx-background-color: #588157;">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" maxWidth="-Infinity" prefHeight="58.0" prefWidth="610.0" spacing="15.0" style="-fx-background-color: transparent;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="654.0" text="Read, Return, Repeat ." textFill="#dad7cd">
+                           <font>
+                              <Font name="Montserrat Bold" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <Pane prefHeight="602.0" prefWidth="935.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="5.0" layoutY="175.0" prefHeight="140.0" prefWidth="919.0" spacing="20.0">
+                     <children>
+                        <HBox fx:id="tsp" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#tspdeets" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #DAD7CD;" stylesheets="@Style.css">
+                           <children>
+                              <ImageView fx:id="book_shape" fitHeight="101.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icon(10).png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" prefHeight="98.0" prefWidth="111.0">
+                                 <children>
+                                    <Label prefHeight="54.0" prefWidth="164.0" text="THE SILENT&#10;PATIENT">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Alex Michaelides">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Untitleddesign(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="bg_book" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                        </HBox>
+                        <HBox fx:id="bone" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#bones" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #DAD7CD;" stylesheets="@Style.css">
+                           <children>
+                              <ImageView fx:id="book_shape2" fitHeight="86.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@bonesofcontention.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="138.0">
+                                 <children>
+                                    <Label prefHeight="54.0" prefWidth="105.0" text="BONES OF&#10;CONTENTION">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Ambeth R. Ocampo">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Untitleddesign(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="bg_book" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                        </HBox>
+                        <HBox fx:id="young" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#diary" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #DAD7CD;" stylesheets="@Style.css">
+                           <children>
+                              <ImageView fx:id="book_shape14" fitHeight="91.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@diaryofayounggirl.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="138.0">
+                                 <children>
+                                    <Label prefHeight="54.0" prefWidth="136.0" text="THE DIARY OF A&#10;YOUNG GIRL">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Anne Frank">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Untitleddesign(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="bg_book" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                        </HBox>
+                        <HBox fx:id="diktador" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#diktador" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #DAD7CD;" stylesheets="@Style.css">
+                           <children>
+                              <ImageView fx:id="book_shape3" fitHeight="91.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@theconjugaldictatorship.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="138.0">
+                                 <children>
+                                    <Label prefHeight="54.0" prefWidth="136.0" text="THE CONJUGAL&#10;DICTATORSHIP">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Primitivo Mijares">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Untitleddesign(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="bg_book" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="-3.0" prefHeight="150.0" prefWidth="935.0" spacing="20.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="464.0">
+                           <children>
+                              <Text fill="#344e41" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT A &#10;BOOK." wrappingWidth="364.3516540527344">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="62.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                           </children></VBox>
+                        <HBox fx:id="reco_bg" alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="111.0" prefWidth="622.0" spacing="15.0" style="-fx-background-color: #3a5a41;" styleClass="reco_bg" stylesheets="@Style.css">
+                           <children>
+                              <Label prefHeight="70.0" prefWidth="180.0" text="Must Read&#10;Books" textFill="#a3b18a">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="29.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="15.0" />
+                                 </padding>
+                              </Label>
+                              <HBox fx:id="tsp" alignment="CENTER" maxHeight="-Infinity" prefHeight="90.0" prefWidth="87.0" style="-fx-background-color: #a3b18a;" stylesheets="@Style.css">
+                                 <children>
+                                    <ImageView fx:id="mustreadbook1" fitHeight="77.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@icon(10).png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="bg_book" />
+                                    <String fx:value="btn1" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox fx:id="noli" alignment="CENTER" maxHeight="-Infinity" prefHeight="90.0" prefWidth="87.0" style="-fx-background-color: #a3b18a;" stylesheets="@Style.css">
+                                 <children>
+                                    <ImageView fx:id="mustreadbook2" fitHeight="73.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@noli.jpg" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="bg_book" />
+                                    <String fx:value="btn1" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox fx:id="brief" alignment="CENTER" maxHeight="-Infinity" prefHeight="90.0" prefWidth="87.0" style="-fx-background-color: #a3b18a;" stylesheets="@Style.css">
+                                 <children>
+                                    <ImageView fx:id="book_shape41" fitHeight="93.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" styleClass="bg_book">
+                                       <image>
+                                          <Image url="@abriefhistoryoftime.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="bg_book" />
+                                    <String fx:value="btn1" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets right="15.0" top="10.0" />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </HBox>
+                  <Label layoutX="30.0" layoutY="154.0" prefHeight="22.0" prefWidth="225.0" text="Top 12 Books of the Month" textFill="#344e41">
+                     <font>
+                        <Font name="Montserrat Regular" size="17.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="5.0" layoutY="305.0" prefHeight="140.0" prefWidth="919.0" spacing="20.0">
+                     <children>
+                        <HBox fx:id="brief" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#history" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #DAD7CD;" stylesheets="@Style.css">
+                           <children>
+                              <ImageView fx:id="book_shape4" fitHeight="81.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@abriefhistoryoftime.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" prefHeight="98.0" prefWidth="118.0">
+                                 <children>
+                                    <Label prefHeight="54.0" prefWidth="125.0" text="A BRIEF&#10;HISTORY OF OUR TIME">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Stephen Hawking">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Untitleddesign(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="bg_book" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                        </HBox>
+                        <HBox fx:id="me" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#noli" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #DAD7CD;" stylesheets="@Style.css">
+                           <children>
+                              <ImageView fx:id="book_shape5" fitHeight="86.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@noli.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="138.0">
+                                 <children>
+                                    <Label prefHeight="54.0" prefWidth="105.0" text="NOLI ME&#10;TÁNGERE">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Jose Rizal">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Untitleddesign(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="bg_book" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                        </HBox>
+                        <HBox fx:id="kapitan" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#sino" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #DAD7CD;" stylesheets="@Style.css">
+                           <children>
+                              <ImageView fx:id="book_shape6" fitHeight="91.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@kapitansino.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="138.0">
+                                 <children>
+                                    <Label prefHeight="54.0" prefWidth="136.0" text="KAPITAN&#10;SINO">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Bob Ong">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Untitleddesign(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="bg_book" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                        </HBox>
+                        <HBox fx:id="mama" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#mamasusan" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #DAD7CD;" stylesheets="@Style.css">
+                           <children>
+                              <ImageView fx:id="book_shape7" fitHeight="91.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@angmgakaibigannimamasusan.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="138.0">
+                                 <children>
+                                    <Label prefHeight="54.0" prefWidth="136.0" text="ANG MGA KAIBIGAN&#10;NI MAMA SUSAN">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Bob Ong">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Untitleddesign(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="bg_book" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="5.0" layoutY="435.0" prefHeight="140.0" prefWidth="919.0" spacing="20.0">
+                     <children>
+                        <HBox fx:id="paborito" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#hudas" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #DAD7CD;" stylesheets="@Style.css">
+                           <children>
+                              <ImageView fx:id="book_shape8" fitHeight="79.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Ang_Paboritong_Libro_ni_Hudas.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" prefHeight="98.0" prefWidth="111.0">
+                                 <children>
+                                    <Label prefHeight="54.0" prefWidth="164.0" text="ANG PABORITONG LIBRO&#10;NI HUDAS">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Bob Ong">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Untitleddesign(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="bg_book" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                        </HBox>
+                        <HBox fx:id="java" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#forkids" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #DAD7CD;" stylesheets="@Style.css">
+                           <children>
+                              <ImageView fx:id="book_shape9" fitHeight="86.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@javascriptforkids.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="138.0">
+                                 <children>
+                                    <Label prefHeight="54.0" prefWidth="105.0" text="JAVASCRIPT&#10;FOR KIDS">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Nick Morgan">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Untitleddesign(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="bg_book" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                        </HBox>
+                        <HBox fx:id="code" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#code" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #DAD7CD;" stylesheets="@Style.css">
+                           <children>
+                              <ImageView fx:id="book_shape10" fitHeight="84.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@code.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="138.0">
+                                 <children>
+                                    <Label prefHeight="54.0" prefWidth="105.0" text="CODE">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="31.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Charles Petzold">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Untitleddesign(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="bg_book" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                        </HBox>
+                        <HBox fx:id="guns" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#august" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #DAD7CD;" stylesheets="@Style.css">
+                           <children>
+                              <ImageView fx:id="book_shape12" fitHeight="91.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@thegunsofaugust.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="138.0">
+                                 <children>
+                                    <Label prefHeight="54.0" prefWidth="136.0" text="THE GUNS OF&#10;AUGUST">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="19.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Barbara W. Tuchman">
+                                       <font>
+                                          <Font name="Montserrat Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Untitleddesign(2).png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="bg_book" />
+                              <String fx:value="btn" />
+                           </styleClass>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox fx:id="titlebar" onMouseDragged="#drag" onMousePressed="#pressed" prefHeight="26.0" prefWidth="935.0" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="882.0">
+               <children>
+                  <Text fill="#3a5a40" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME PAGE" wrappingWidth="106.04972267150879">
+                     <font>
+                        <Font name="Montserrat Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <Label fx:id="minimize" alignment="TOP_CENTER" onMouseClicked="#minimize" prefHeight="30.0" prefWidth="26.0" text="_" textFill="#3a5a40">
+               <font>
+                  <Font name="Montserrat Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="close" alignment="CENTER" contentDisplay="RIGHT" onMouseClicked="#close" prefHeight="59.0" prefWidth="28.0" text="X" textFill="#3a5a40">
+               <font>
+                  <Font name="Montserrat Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

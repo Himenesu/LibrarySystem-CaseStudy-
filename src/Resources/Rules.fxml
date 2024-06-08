@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="450.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="booking.ui.Controller">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #A3B18A;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="84.0" prefWidth="474.0" spacing="50.0" style="-fx-background-color: #3A5A40;">
+               <children>
+                  <ImageView fitHeight="84.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Logo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.28" orientation="VERTICAL" prefHeight="43.0" prefWidth="0.0" style="-fx-background-color: #3A5A40;">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Separator>
+                  <HBox alignment="CENTER_RIGHT" maxWidth="-Infinity" prefHeight="84.0" prefWidth="227.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="84.0" prefWidth="190.0">
+                           <HBox.margin>
+                              <Insets right="100.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="86.0" prefWidth="168.0" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="450.0" spacing="30.0" style="-fx-background-color: #588157;">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="50.0" prefWidth="450.0">
+                     <children>
+                        <Text fill="#3a5a40" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Rules">
+                           <font>
+                              <Font name="Montserrat Bold" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <Pane prefHeight="566.0" prefWidth="450.0">
+               <children>
+                  <VBox layoutX="44.0" layoutY="36.0" prefHeight="353.0" prefWidth="339.0" spacing="20.0">
+                     <children>
+                        <Text fill="#3a5a40" strokeType="OUTSIDE" strokeWidth="0.0" text="* Books must be returned on or before the due date to avoid penalties.&#10;&#10;* Borrowers are responsible for the replacement cost of any lost or damaged books. In some cases, a processing fee may also be charged.&#10;&#10;* A fine of Php5.00 per day will be charged for each book returned late.&#10;&#10;* Borrowers can borrow a maximum of 5 books at a time.&#10;&#10;* Failure to comply with borrowing rules may result in suspension or revocation of borrowing privileges." wrappingWidth="372.53687286376953">
+                           <font>
+                              <Font name="Montserrat Regular" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <Button fx:id="agreebtn" layoutX="160.0" layoutY="431.0" mnemonicParsing="false" onAction="#openBookingSystem" prefHeight="34.0" prefWidth="141.0" style="-fx-background-color: #3A5A40;" text="AGREE" textFill="#dad7cd">
+                     <font>
+                        <Font name="Montserrat Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="btn1" />
+                        <String fx:value="btn_workbench" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="disagreebtn" layoutX="160.0" layoutY="479.0" mnemonicParsing="false" onMouseClicked="#disagree" prefHeight="34.0" prefWidth="141.0" style="-fx-background-color: #3A5A40;" text="DISAGREE" textFill="#dad7cd">
+                     <font>
+                        <Font name="Montserrat Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="btn1" />
+                        <String fx:value="btn_workbench" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox fx:id="titlebar" onMouseDragged="#drag" onMousePressed="#pressed" prefHeight="22.0" prefWidth="630.0" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="412.0">
+               <children>
+                  <Text fill="#3a5a40" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="RULES" textAlignment="CENTER" wrappingWidth="44.18306922912598">
+                     <font>
+                        <Font name="Montserrat Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <Label fx:id="minimize" alignment="TOP_CENTER" onMouseClicked="#minimize" prefHeight="22.0" prefWidth="24.0" text="_" textFill="#3a5a40">
+               <font>
+                  <Font name="Montserrat Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="close" alignment="CENTER" contentDisplay="RIGHT" onMouseClicked="#close" prefHeight="22.0" prefWidth="24.0" text="X" textFill="#3a5a40">
+               <font>
+                  <Font name="Montserrat Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

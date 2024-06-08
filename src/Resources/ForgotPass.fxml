@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #344E41;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="booking.service.AuthenticationController">
+   <center>
+      <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #344E41;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="410.0" style="-fx-background-color: #344E41;">
+                     <children>
+                        <Button fx:id="sendButton" layoutX="139.0" layoutY="248.0" mnemonicParsing="false" onMouseClicked="#forgotPass" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #A3B18A;" text="Send" textFill="#344e41">
+                           <font>
+                              <Font name="Montserrat ExtraBold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Text fill="#dad7cd" layoutX="41.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Read, Return, Repeat ." wrappingWidth="266.13677978515625">
+                           <font>
+                              <Font name="Montserrat ExtraBold" size="36.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="47.0" fitWidth="53.0" layoutX="41.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@3.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="emailField" layoutX="90.0" layoutY="189.0" prefHeight="26.0" prefWidth="217.0" promptText="Email" style="-fx-background-color: #DAD7CD;">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                        </TextField>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="119.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your email:">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="loginForm" layoutX="350.0" prefHeight="400.0" prefWidth="249.0" style="-fx-background-color: A3B18A;">
+                     <children>
+                        <ImageView fitHeight="238.0" fitWidth="234.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </center>
+   <top>
+      <HBox fx:id="titlebar" onMouseDragged="#drag" onMousePressed="#pressed" prefHeight="22.0" prefWidth="630.0" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="549.0">
+               <children>
+                  <Text fill="#3a5a40" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="FORGOT PASSWORD" textAlignment="CENTER" wrappingWidth="139.38308906555176">
+                     <font>
+                        <Font name="Montserrat Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <Label fx:id="minimize" alignment="TOP_CENTER" onMouseClicked="#minimize" prefHeight="22.0" prefWidth="24.0" text="_" textFill="#3a5a40">
+               <font>
+                  <Font name="Montserrat Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="close" alignment="CENTER" contentDisplay="RIGHT" onMouseClicked="#close" prefHeight="22.0" prefWidth="24.0" text="X" textFill="#3a5a40">
+               <font>
+                  <Font name="Montserrat Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
